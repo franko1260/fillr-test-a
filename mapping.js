@@ -14,14 +14,34 @@ jsdom.env(
         //console.log("there have been", window.$("a").length - 4, "io.js releases!")
 
         var inputs = window.document.getElementsByTagName("input");
-        var select = window.document.getElementsByTagName("select");
 
-        console.log(inputs);
+        //selector not needed?
+        //var select = window.document.getElementsByTagName("select");
 
         var names = [];
         var section = ["test", "blergh"];
         var addressType = ["gnagh", "hel"];
-        var autoFillFieldName = ["akljsd", "djkfh"];
+        var autoFillFieldName = [
+        //basic
+            "email", "name", "address-line1", "address-line2", "address-level4", "address-level3", "postal-code", "tel",
+        //shipto
+            "honorific-prefix", "given-name", "additional-name", "family-name", "honorific-suffix", "organization",
+            "address-line1","address-line2","address-line3", "address-level4", "address-level3", "postal-code",
+            "country", "tel", "email",
+        //billto
+            "honorific-prefix", "given-name", "additional-name", "family-name", "honorific-suffix", "organization",
+            "address-line1","address-line2","address-line3", "address-level4", "address-level3", "postal-code",
+            "country", "tel", "email",
+        //receiptto
+            "honorific-prefix", "given-name", "additional-name", "family-name", "honorific-suffix", "organization",
+            "address-line1","address-line2","address-line3", "address-level4", "address-level3", "postal-code",
+            "country", "tel", "email",
+        //credit card
+            "cc-name", "cc-type", "cc-number", "cc-csc", "cc-exp", "cc-exp-month", "cc-exp-year", "cc-type",
+        //user
+            "url", "nickname", "current-password", "url", "url"
+
+        ];
 
         //extract names from elements
         for (var a = 0; a < inputs.length; a++)
@@ -30,7 +50,7 @@ jsdom.env(
         }
         console.log(names);
 
-        //generate string for conversion to JSON
+        /*//generate string for conversion to JSON
         var string = ""
         for (var a = 0; a < inputs.length; a++)
         {
@@ -38,9 +58,26 @@ jsdom.env(
                 '":{ "section": "' + section[a] +
                 '", "addressType": "' + addressType[a] +
                 '", "AFFieldName": "' + autoFillFieldName[a] + '"},';
+        }*/
+
+        //generate string for conversion to JSON
+        var string = {
+            mapping: []
+        };
+        for (var a = 0; a < inputs.length; a++)
+        {
+
+            string.mapping.push(
+                {
+                    id: names[a],
+                    section: section[a],
+                    addressType: addressType[a],
+                    AFFieldName: autoFillFieldName[a]
+                }
+                );
         }
 
-        fs.writeFile('myjsonfile.json', JSON.stringify(string), "utf8");
+        fs.writeFile('mapping.json', JSON.stringify(string, null, 4), "utf8");
     }
 );
 
