@@ -18,13 +18,22 @@ jsdom.env(
         var output = {};
         var addString = "";
 
-        for (var a = 5; a < inputs.length; a++)
+        for (var a = 0; a < inputs.length; a++)
         {
+            if (inputs[a].getElementsByTagName("input")[0] != undefined)
+            {
+                addString = inputs[a].textContent + inputs[a].getElementsByTagName("input")[0].name;
+                console.log(addString);
 
-            addString = inputs[a].textContent + inputs[a].getElementsByTagName("input")[0].name;
-            console.log(addString);
+
+            }
+            else if (inputs[a].getElementsByTagName("select")[0] != undefined) {
+
+                addString = inputs[a].getElementsByTagName("td")[0].textContent + inputs[a].getElementsByTagName("select")[0].name;
+                console.log(addString);
+            }
+
         }
-
 
 
 
