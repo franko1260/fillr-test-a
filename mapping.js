@@ -1,5 +1,6 @@
 /**
  * Created by frankingardia on 6/12/16.
+ * Task 1: Form Mapping
  */
 
 //var myArrayOfLinks = document.getElementsByTagName("a")
@@ -11,7 +12,6 @@ jsdom.env(
     "http://autofill.mozdev.org/autofilltest.html",
     ["~/WebstormProjects/fillr-test-a/mapping.js"],
     function (err, window) {
-        //console.log("there have been", window.$("a").length - 4, "io.js releases!")
 
         var inputs = window.document.getElementsByTagName("input");
 
@@ -20,7 +20,7 @@ jsdom.env(
 
         var names = [];
         var section = ["test", "blergh"];
-        var addressType = ["gnagh", "hel"];
+        var addressType = ["gnagh", "helo"];
         var autoFillFieldName = [
         //basic
             "email", "name", "address-line1", "address-line2", "address-level4", "address-level3", "postal-code", "tel",
@@ -40,7 +40,6 @@ jsdom.env(
             "cc-name", "cc-type", "cc-number", "cc-csc", "cc-exp", "cc-exp-month", "cc-exp-year", "cc-type",
         //user
             "url", "nickname", "current-password", "url", "url"
-
         ];
 
         //extract names from elements
@@ -48,7 +47,7 @@ jsdom.env(
         {
             names.push(inputs[a].name);
         }
-        console.log(names);
+        //console.log(names);
 
         /*//generate string for conversion to JSON
         var string = ""
@@ -78,6 +77,7 @@ jsdom.env(
         }
 
         fs.writeFile('mapping.json', JSON.stringify(string, null, 4), "utf8");
+        console.log("Complete! See file mapping.json")
     }
 );
 

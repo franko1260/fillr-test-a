@@ -9,7 +9,7 @@
         {
             "id": "name",
             "section": "blergh",
-            "addressType": "hel",
+            "addressType": "helo",
             "AFFieldName": "name"
         },
         {
