@@ -3,8 +3,6 @@
  * Task 1: Form Mapping
  */
 
-//var myArrayOfLinks = document.getElementsByTagName("a")
-//gets all elements in the html doc that have the desired tag
 var jsdom = require("jsdom");
 const fs = require("fs");
 
@@ -14,32 +12,72 @@ jsdom.env(
     function (err, window) {
 
         var inputs = window.document.getElementsByTagName("input");
-
-        //selector not needed?
+        //selector not needed? (Question specifically asked for "input" controls)
         //var select = window.document.getElementsByTagName("select");
 
-        var names = [];
-        var section = ["test", "blergh"];
-        var addressType = ["gnagh", "helo"];
+        var names = []; //output
+        var section = [
+            //(based on my understanding of Section 4.10.1.7 of the WHATWG spec)
+            //basic
+            "section-basic", "section-basic", "section-basic", "section-basic", "section-basic", "section-basic", "section-basic", "section-basic",
+            //shipto
+            "section-shipAddress", "section-shipAddress", "section-shipAddress", "section-shipAddress", "section-shipAddress", "section-shipAddress",
+            "section-shipAddress","section-shipAddress","section-shipAddress", "section-shipAddress", "section-shipAddress", "section-shipAddress",
+            "section-shipAddress", "section-shipAddress", "section-shipAddress",
+            //billto
+            "section-billingAddress", "section-billingAddress", "section-billingAddress", "section-billingAddress", "section-billingAddress", "section-billingAddress",
+            "section-billingAddress","section-billingAddress","section-billingAddress", "section-billingAddress", "section-billingAddress", "section-billingAddress",
+            "section-billingAddress", "section-billingAddress", "section-billingAddress",
+            //receiptto
+            "section-receiptAddress", "section-receiptAddress", "section-receiptAddress", "section-receiptAddress", "section-receiptAddress", "section-receiptAddress",
+            "section-receiptAddress","section-receiptAddress","section-receiptAddress", "section-receiptAddress", "section-receiptAddress", "section-receiptAddress",
+            "section-receiptAddress", "section-receiptAddress", "section-receiptAddress",
+            //creditcard
+            "section-cc", "section-cc", "section-cc", "section-cc", "section-cc", "section-cc", "section-cc", "section-cc",
+            //userinfo
+            "section-user", "section-user", "section-user", "section-user", "section-user"
+        ];
+
+        var addressType = [
+            //(based on my understanding of Section 4.10.19.8.1 Part 2 of the WHATWG spec)
+            //basic
+            "", "", "", "", "", "", "", "",
+            //shipto
+            "shipping", "shipping", "shipping", "shipping", "shipping", "shipping",
+            "shipping","shipping","shipping", "shipping", "shipping", "shipping",
+            "shipping", "shipping", "shipping",
+            //billto
+            "billing", "billing", "billing", "billing", "billing", "billing",
+            "billing","billing","billing", "billing", "billing", "billing",
+            "billing", "billing", "billing",
+            //receiptto
+            "receipt", "receipt", "receipt", "receipt", "receipt", "receipt",
+            "receipt","receipt","receipt", "receipt", "receipt", "receipt",
+            "receipt", "receipt", "receipt",
+            //creditcard
+            "", "", "", "", "", "", "", "",
+            //userinfo
+            "", "", "", "", ""];
+
         var autoFillFieldName = [
-        //basic
+            //basic
             "email", "name", "address-line1", "address-line2", "address-level4", "address-level3", "postal-code", "tel",
-        //shipto
+            //shipto
             "honorific-prefix", "given-name", "additional-name", "family-name", "honorific-suffix", "organization",
             "address-line1","address-line2","address-line3", "address-level4", "address-level3", "postal-code",
             "country", "tel", "email",
-        //billto
+            //billto
             "honorific-prefix", "given-name", "additional-name", "family-name", "honorific-suffix", "organization",
             "address-line1","address-line2","address-line3", "address-level4", "address-level3", "postal-code",
             "country", "tel", "email",
-        //receiptto
+            //receiptto
             "honorific-prefix", "given-name", "additional-name", "family-name", "honorific-suffix", "organization",
             "address-line1","address-line2","address-line3", "address-level4", "address-level3", "postal-code",
             "country", "tel", "email",
-        //credit card
+            //credit card
             "cc-name", "cc-type", "cc-number", "cc-csc", "cc-exp", "cc-exp-month", "cc-exp-year", "cc-type",
-        //user
-            "url", "nickname", "current-password", "url", "url"
+            //user
+            "numeric", "nickname", "current-password", "numeric", "numeric"
         ];
 
         //extract names from elements
@@ -60,7 +98,7 @@ jsdom.env(
         }*/
 
         //generate string for conversion to JSON
-        var string = {
+        /*var string = {
             mapping: []
         };
         for (var a = 0; a < inputs.length; a++)
@@ -73,14 +111,22 @@ jsdom.env(
                     addressType: addressType[a],
                     AFFieldName: autoFillFieldName[a]
                 }
-                );
+            );
+        }*/
+
+        var string = {};
+
+        for (var a = 0; a < inputs.length; a++)
+        {
+                string[names[a]] = {
+                    //id: names[a],
+                    section: section[a],
+                    addressType: addressType[a],
+                    AFFieldName: autoFillFieldName[a]
+                }
         }
 
         fs.writeFile('mapping.json', JSON.stringify(string, null, 4), "utf8");
         console.log("Complete! See file mapping.json")
     }
 );
-
-
-//JSON.stringify([value])
-//converts to JSON string (https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)

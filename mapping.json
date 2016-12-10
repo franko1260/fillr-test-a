@@ -1,272 +1,332 @@
 {
-    "mapping": [
-        {
-            "id": "email",
-            "section": "test",
-            "addressType": "gnagh",
-            "AFFieldName": "email"
-        },
-        {
-            "id": "name",
-            "section": "blergh",
-            "addressType": "helo",
-            "AFFieldName": "name"
-        },
-        {
-            "id": "addr1",
-            "AFFieldName": "address-line1"
-        },
-        {
-            "id": "addr2",
-            "AFFieldName": "address-line2"
-        },
-        {
-            "id": "city",
-            "AFFieldName": "address-level4"
-        },
-        {
-            "id": "state",
-            "AFFieldName": "address-level3"
-        },
-        {
-            "id": "zip",
-            "AFFieldName": "postal-code"
-        },
-        {
-            "id": "phone",
-            "AFFieldName": "tel"
-        },
-        {
-            "id": "Ecom_ShipTo_Postal_Name_Prefix",
-            "AFFieldName": "honorific-prefix"
-        },
-        {
-            "id": "Ecom_ShipTo_Postal_Name_First",
-            "AFFieldName": "given-name"
-        },
-        {
-            "id": "Ecom_ShipTo_Postal_Name_Middle",
-            "AFFieldName": "additional-name"
-        },
-        {
-            "id": "Ecom_ShipTo_Postal_Name_Last",
-            "AFFieldName": "family-name"
-        },
-        {
-            "id": "Ecom_ShipTo_Postal_Name_Suffix",
-            "AFFieldName": "honorific-suffix"
-        },
-        {
-            "id": "Ecom_ShipTo_Postal_Company",
-            "AFFieldName": "organization"
-        },
-        {
-            "id": "Ecom_ShipTo_Postal_Street_Line1",
-            "AFFieldName": "address-line1"
-        },
-        {
-            "id": "Ecom_ShipTo_Postal_Street_Line2",
-            "AFFieldName": "address-line2"
-        },
-        {
-            "id": "Ecom_ShipTo_Postal_Street_Line3",
-            "AFFieldName": "address-line3"
-        },
-        {
-            "id": "Ecom_ShipTo_Postal_City",
-            "AFFieldName": "address-level4"
-        },
-        {
-            "id": "Ecom_ShipTo_Postal_StateProv",
-            "AFFieldName": "address-level3"
-        },
-        {
-            "id": "Ecom_ShipTo_Postal_PostalCode",
-            "AFFieldName": "postal-code"
-        },
-        {
-            "id": "Ecom_ShipTo_Postal_CountryCode",
-            "AFFieldName": "country"
-        },
-        {
-            "id": "Ecom_ShipTo_Telecom_Phone_Number",
-            "AFFieldName": "tel"
-        },
-        {
-            "id": "Ecom_ShipTo_Online_Email",
-            "AFFieldName": "email"
-        },
-        {
-            "id": "Ecom_BillTo_Postal_Name_Prefix",
-            "AFFieldName": "honorific-prefix"
-        },
-        {
-            "id": "Ecom_BillTo_Postal_Name_First",
-            "AFFieldName": "given-name"
-        },
-        {
-            "id": "Ecom_BillTo_Postal_Name_Middle",
-            "AFFieldName": "additional-name"
-        },
-        {
-            "id": "Ecom_BillTo_Postal_Name_Last",
-            "AFFieldName": "family-name"
-        },
-        {
-            "id": "Ecom_BillTo_Postal_Name_Suffix",
-            "AFFieldName": "honorific-suffix"
-        },
-        {
-            "id": "Ecom_BillTo_Postal_Company",
-            "AFFieldName": "organization"
-        },
-        {
-            "id": "Ecom_BillTo_Postal_Street_Line1",
-            "AFFieldName": "address-line1"
-        },
-        {
-            "id": "Ecom_BillTo_Postal_Street_Line2",
-            "AFFieldName": "address-line2"
-        },
-        {
-            "id": "Ecom_BillTo_Postal_Street_Line3",
-            "AFFieldName": "address-line3"
-        },
-        {
-            "id": "Ecom_BillTo_Postal_City",
-            "AFFieldName": "address-level4"
-        },
-        {
-            "id": "Ecom_BillTo_Postal_StateProv",
-            "AFFieldName": "address-level3"
-        },
-        {
-            "id": "Ecom_BillTo_Postal_PostalCode",
-            "AFFieldName": "postal-code"
-        },
-        {
-            "id": "Ecom_BillTo_Postal_CountryCode",
-            "AFFieldName": "country"
-        },
-        {
-            "id": "Ecom_BillTo_Telecom_Phone_Number",
-            "AFFieldName": "tel"
-        },
-        {
-            "id": "Ecom_BillTo_Online_Email",
-            "AFFieldName": "email"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Postal_Name_Prefix",
-            "AFFieldName": "honorific-prefix"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Postal_Name_First",
-            "AFFieldName": "given-name"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Postal_Name_Middle",
-            "AFFieldName": "additional-name"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Postal_Name_Last",
-            "AFFieldName": "family-name"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Postal_Name_Suffix",
-            "AFFieldName": "honorific-suffix"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Postal_Company",
-            "AFFieldName": "organization"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Postal_Street_Line1",
-            "AFFieldName": "address-line1"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Postal_Street_Line2",
-            "AFFieldName": "address-line2"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Postal_Street_Line3",
-            "AFFieldName": "address-line3"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Postal_City",
-            "AFFieldName": "address-level4"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Postal_StateProv",
-            "AFFieldName": "address-level3"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Postal_PostalCode",
-            "AFFieldName": "postal-code"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Postal_CountryCode",
-            "AFFieldName": "country"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Telecom_Phone_Number",
-            "AFFieldName": "tel"
-        },
-        {
-            "id": "Ecom_ReceiptTo_Online_Email",
-            "AFFieldName": "email"
-        },
-        {
-            "id": "Ecom_Payment_Card_Name",
-            "AFFieldName": "cc-name"
-        },
-        {
-            "id": "Ecom_Payment_Card_Type",
-            "AFFieldName": "cc-type"
-        },
-        {
-            "id": "Ecom_Payment_Card_Number",
-            "AFFieldName": "cc-number"
-        },
-        {
-            "id": "Ecom_Payment_Card_Verification",
-            "AFFieldName": "cc-csc"
-        },
-        {
-            "id": "Ecom_Payment_Card_ExpDate_Day",
-            "AFFieldName": "cc-exp"
-        },
-        {
-            "id": "Ecom_Payment_Card_ExpDate_Month",
-            "AFFieldName": "cc-exp-month"
-        },
-        {
-            "id": "Ecom_Payment_Card_ExpDate_Year",
-            "AFFieldName": "cc-exp-year"
-        },
-        {
-            "id": "Ecom_Payment_Card_Protocol",
-            "AFFieldName": "cc-type"
-        },
-        {
-            "id": "Ecom_ConsumerOrderID",
-            "AFFieldName": "url"
-        },
-        {
-            "id": "Ecom_User_ID",
-            "AFFieldName": "nickname"
-        },
-        {
-            "id": "Ecom_User_Password",
-            "AFFieldName": "current-password"
-        },
-        {
-            "id": "Ecom_SchemaVersion",
-            "AFFieldName": "url"
-        },
-        {
-            "id": "Ecom_WalletID",
-            "AFFieldName": "url"
-        }
-    ]
+    "email": {
+        "section": "section-basic",
+        "addressType": "",
+        "AFFieldName": "email"
+    },
+    "name": {
+        "section": "section-basic",
+        "addressType": "",
+        "AFFieldName": "name"
+    },
+    "addr1": {
+        "section": "section-basic",
+        "addressType": "",
+        "AFFieldName": "address-line1"
+    },
+    "addr2": {
+        "section": "section-basic",
+        "addressType": "",
+        "AFFieldName": "address-line2"
+    },
+    "city": {
+        "section": "section-basic",
+        "addressType": "",
+        "AFFieldName": "address-level4"
+    },
+    "state": {
+        "section": "section-basic",
+        "addressType": "",
+        "AFFieldName": "address-level3"
+    },
+    "zip": {
+        "section": "section-basic",
+        "addressType": "",
+        "AFFieldName": "postal-code"
+    },
+    "phone": {
+        "section": "section-basic",
+        "addressType": "",
+        "AFFieldName": "tel"
+    },
+    "Ecom_ShipTo_Postal_Name_Prefix": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "honorific-prefix"
+    },
+    "Ecom_ShipTo_Postal_Name_First": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "given-name"
+    },
+    "Ecom_ShipTo_Postal_Name_Middle": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "additional-name"
+    },
+    "Ecom_ShipTo_Postal_Name_Last": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "family-name"
+    },
+    "Ecom_ShipTo_Postal_Name_Suffix": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "honorific-suffix"
+    },
+    "Ecom_ShipTo_Postal_Company": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "organization"
+    },
+    "Ecom_ShipTo_Postal_Street_Line1": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "address-line1"
+    },
+    "Ecom_ShipTo_Postal_Street_Line2": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "address-line2"
+    },
+    "Ecom_ShipTo_Postal_Street_Line3": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "address-line3"
+    },
+    "Ecom_ShipTo_Postal_City": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "address-level4"
+    },
+    "Ecom_ShipTo_Postal_StateProv": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "address-level3"
+    },
+    "Ecom_ShipTo_Postal_PostalCode": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "postal-code"
+    },
+    "Ecom_ShipTo_Postal_CountryCode": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "country"
+    },
+    "Ecom_ShipTo_Telecom_Phone_Number": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "tel"
+    },
+    "Ecom_ShipTo_Online_Email": {
+        "section": "section-shipAddress",
+        "addressType": "shipping",
+        "AFFieldName": "email"
+    },
+    "Ecom_BillTo_Postal_Name_Prefix": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "honorific-prefix"
+    },
+    "Ecom_BillTo_Postal_Name_First": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "given-name"
+    },
+    "Ecom_BillTo_Postal_Name_Middle": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "additional-name"
+    },
+    "Ecom_BillTo_Postal_Name_Last": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "family-name"
+    },
+    "Ecom_BillTo_Postal_Name_Suffix": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "honorific-suffix"
+    },
+    "Ecom_BillTo_Postal_Company": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "organization"
+    },
+    "Ecom_BillTo_Postal_Street_Line1": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "address-line1"
+    },
+    "Ecom_BillTo_Postal_Street_Line2": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "address-line2"
+    },
+    "Ecom_BillTo_Postal_Street_Line3": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "address-line3"
+    },
+    "Ecom_BillTo_Postal_City": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "address-level4"
+    },
+    "Ecom_BillTo_Postal_StateProv": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "address-level3"
+    },
+    "Ecom_BillTo_Postal_PostalCode": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "postal-code"
+    },
+    "Ecom_BillTo_Postal_CountryCode": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "country"
+    },
+    "Ecom_BillTo_Telecom_Phone_Number": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "tel"
+    },
+    "Ecom_BillTo_Online_Email": {
+        "section": "section-billingAddress",
+        "addressType": "billing",
+        "AFFieldName": "email"
+    },
+    "Ecom_ReceiptTo_Postal_Name_Prefix": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "honorific-prefix"
+    },
+    "Ecom_ReceiptTo_Postal_Name_First": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "given-name"
+    },
+    "Ecom_ReceiptTo_Postal_Name_Middle": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "additional-name"
+    },
+    "Ecom_ReceiptTo_Postal_Name_Last": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "family-name"
+    },
+    "Ecom_ReceiptTo_Postal_Name_Suffix": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "honorific-suffix"
+    },
+    "Ecom_ReceiptTo_Postal_Company": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "organization"
+    },
+    "Ecom_ReceiptTo_Postal_Street_Line1": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "address-line1"
+    },
+    "Ecom_ReceiptTo_Postal_Street_Line2": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "address-line2"
+    },
+    "Ecom_ReceiptTo_Postal_Street_Line3": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "address-line3"
+    },
+    "Ecom_ReceiptTo_Postal_City": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "address-level4"
+    },
+    "Ecom_ReceiptTo_Postal_StateProv": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "address-level3"
+    },
+    "Ecom_ReceiptTo_Postal_PostalCode": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "postal-code"
+    },
+    "Ecom_ReceiptTo_Postal_CountryCode": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "country"
+    },
+    "Ecom_ReceiptTo_Telecom_Phone_Number": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "tel"
+    },
+    "Ecom_ReceiptTo_Online_Email": {
+        "section": "section-receiptAddress",
+        "addressType": "receipt",
+        "AFFieldName": "email"
+    },
+    "Ecom_Payment_Card_Name": {
+        "section": "section-cc",
+        "addressType": "",
+        "AFFieldName": "cc-name"
+    },
+    "Ecom_Payment_Card_Type": {
+        "section": "section-cc",
+        "addressType": "",
+        "AFFieldName": "cc-type"
+    },
+    "Ecom_Payment_Card_Number": {
+        "section": "section-cc",
+        "addressType": "",
+        "AFFieldName": "cc-number"
+    },
+    "Ecom_Payment_Card_Verification": {
+        "section": "section-cc",
+        "addressType": "",
+        "AFFieldName": "cc-csc"
+    },
+    "Ecom_Payment_Card_ExpDate_Day": {
+        "section": "section-cc",
+        "addressType": "",
+        "AFFieldName": "cc-exp"
+    },
+    "Ecom_Payment_Card_ExpDate_Month": {
+        "section": "section-cc",
+        "addressType": "",
+        "AFFieldName": "cc-exp-month"
+    },
+    "Ecom_Payment_Card_ExpDate_Year": {
+        "section": "section-cc",
+        "addressType": "",
+        "AFFieldName": "cc-exp-year"
+    },
+    "Ecom_Payment_Card_Protocol": {
+        "section": "section-cc",
+        "addressType": "",
+        "AFFieldName": "cc-type"
+    },
+    "Ecom_ConsumerOrderID": {
+        "section": "section-user",
+        "addressType": "",
+        "AFFieldName": "numeric"
+    },
+    "Ecom_User_ID": {
+        "section": "section-user",
+        "addressType": "",
+        "AFFieldName": "nickname"
+    },
+    "Ecom_User_Password": {
+        "section": "section-user",
+        "addressType": "",
+        "AFFieldName": "current-password"
+    },
+    "Ecom_SchemaVersion": {
+        "section": "section-user",
+        "addressType": "",
+        "AFFieldName": "numeric"
+    },
+    "Ecom_WalletID": {
+        "section": "section-user",
+        "addressType": "",
+        "AFFieldName": "numeric"
+    }
 }
